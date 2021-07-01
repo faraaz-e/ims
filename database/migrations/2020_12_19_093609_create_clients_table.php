@@ -15,17 +15,18 @@ class CreateClientsTable extends Migration
     {
         Schema::create('clients', function (Blueprint $table) {
             $table->id();
-            $table->string('client_name');
-            $table->string('client_shop_street');
-            $table->string('client_city_town');
-            $table->integer('client_pincode');
-            $table->integer('client_contact1');
-            $table->integer('client_contact2');
-            $table->string('client_email');
-            $table->double('client_total_amt', 8, 2);
-            $table->double('client_paid_amt', 8, 2);
-            $table->double('client_pending_amt', 8, 2);
+            $table->string('client_name',255);
+            $table->string('client_shop_street', 1000)->nullable();
+            $table->string('client_city_town', 1000)->nullable();
+            $table->integer('client_pincode')->nullable();
+            $table->string('client_desc', 1000)->nullable();
+            $table->integer('client_contact1')->nullable();
+            $table->integer('client_contact2')->nullable();
+            $table->string('client_email', 255)->nullable();
+            $table->double('client_total_amt', 20, 2)->nullable();
+            $table->double('client_paid_amt', 20, 2)->nullable();
             $table->timestamps();
+            $table->integer('created_by');
         });
     }
 
