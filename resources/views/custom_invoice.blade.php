@@ -65,7 +65,7 @@ if( Auth::id() == NULL )
     var wintimeout;
 
     function SetWinTimeout() {
-        wintimeout = window.setTimeout("window.location.href='../logout';",60000); //after 5 mins i.e. 5 * 60 * 1000
+        wintimeout = window.setTimeout("window.location.href='../logout';",900000); //after 5 mins i.e. 5 * 60 * 1000
     }
     $('body').click(function() {
 
