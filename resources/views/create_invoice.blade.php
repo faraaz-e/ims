@@ -594,16 +594,6 @@ if( Auth::id() == NULL )
                             var subtotal = $('#subtotal').val();
                             var shippingCost = $('#shipping_cost').val();
                             var grandTotal = $('#grandtotal').val();
-                            console.log(arr)
-                            console.log(invoiceNo)
-                            console.log(invoiceDate)
-                            console.log(myAddress)
-                            console.log(clientName)
-                            console.log(clientAddress)
-                            console.log(shippingAddress)
-                            console.log(subtotal)
-                            console.log(shippingCost)
-                            console.log(grandTotal)
 
                             $.ajax(
                                 {
