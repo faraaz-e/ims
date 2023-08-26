@@ -1,8 +1,8 @@
-# IMS | Inventory Management System
+## IMS | Inventory Management System
 
 ******************
 
-## About Application
+### About Application
 
 Inventory Management System (IMS) is a web application based on maintaining track of all the
 products data to run your business. It also provides you with Invoice printing functionality & allows maintaining clients data.
@@ -19,7 +19,7 @@ products data to run your business. It also provides you with Invoice printing f
 - Multi user functionality
 - Data security with Login functionality
 
-## Installation
+### Installation
 
 1. Install Xampp and START APACHE & MYSQL in xampp control panel.
 2. Paste **ims**  folder (project folder) to path :  
@@ -30,11 +30,11 @@ products data to run your business. It also provides you with Invoice printing f
 1. _Give database name exactly as mentioned above._
 2. _ims.sql file is in the ims root folder._
     
-## Start Project
+### Start Project
 
 1. Go to **cmd** (Command Prompt) and go to project folder path in cmd
  
     eg. C:/xampp/htdocs/ims
 
-2. Now run this command:  **php artisan serve** and visit the provided url.
+2. Now run this command:  `php artisan serve` and visit the provided url.
 
